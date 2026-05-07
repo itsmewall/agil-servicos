@@ -21,7 +21,7 @@ export function Hero() {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight">
-              Sua vida sem <span className="text-primary">complicações</span> contábeis.
+              Sua vida sem <span className="text-primary">complicações</span> burocráticas.
             </h1>
             
             <p className="text-lg text-slate-600 leading-relaxed">

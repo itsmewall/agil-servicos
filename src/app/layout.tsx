@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     url: "https://agilservicosbr.com.br",
     title: "Ágil Serviços BR | Soluções Contábeis e Burocráticas",
-    description: "Sua vida sem complicações contábeis. Atendimento ágil e seguro para você e sua empresa.",
+    description: "Sua vida sem complicações burocráticas. Atendimento ágil e seguro para você e sua empresa.",
     siteName: "Ágil Serviços BR",
   },
   robots: "index, follow",
