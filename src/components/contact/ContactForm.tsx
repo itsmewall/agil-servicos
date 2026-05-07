@@ -31,12 +31,24 @@ export function ContactForm() {
     resolver: zodResolver(formSchema),
   });
 
-  const onSubmit = async () => {
+  const onSubmit = async (data: FormData) => {
     setStatus("loading");
     
-    // Simulação de envio ou integração com Formspree/Resend
     try {
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      const phoneNumber = "5511999999999";
+      const message = `*Novo Lead - Ágil Serviços BR*\n\n` +
+        `*Nome:* ${data.nome}\n` +
+        `*Email:* ${data.email}\n` +
+        `*Telefone:* ${data.telefone}\n` +
+        `*Serviço:* ${data.servico}\n` +
+        `*Mensagem:* ${data.mensagem}`;
+      
+      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+      
+      // Pequeno delay para UX
+      await new Promise(resolve => setTimeout(resolve, 800));
+      
+      window.open(whatsappUrl, "_blank");
       setStatus("success");
       reset();
     } catch {
