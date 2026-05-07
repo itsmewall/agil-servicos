@@ -53,38 +53,25 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="relative hidden lg:block">
-            <div className="relative z-10 bg-white p-8 rounded-2xl shadow-2xl border border-slate-100">
-              {/* Mockup of a dashboard or result */}
-              <div className="space-y-6">
-                <div className="flex items-center justify-between">
-                  <h3 className="font-bold text-slate-800 text-xl">Status do Serviço</h3>
-                  <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-bold">EM ANDAMENTO</span>
+          <div className="relative hidden lg:flex justify-end">
+            <div className="relative w-full max-w-lg aspect-square">
+              {/* Elementos geométricos premium em vez de mockup confuso */}
+              <div className="absolute inset-0 bg-primary/5 rounded-3xl rotate-3 -z-10"></div>
+              <div className="absolute inset-0 bg-white border border-slate-100 rounded-3xl shadow-2xl flex flex-col items-center justify-center p-12 text-center space-y-6">
+                <div className="w-20 h-20 bg-blue-50 text-primary rounded-2xl flex items-center justify-center">
+                  <CheckCircle2 size={40} />
                 </div>
-                <div className="space-y-4">
-                  <div className="h-2 w-full bg-slate-100 rounded-full overflow-hidden">
-                    <div className="h-full w-3/4 bg-primary animate-pulse"></div>
-                  </div>
-                  <div className="flex justify-between text-sm text-slate-500">
-                    <span>Declaração IRPF</span>
-                    <span>75% Concluído</span>
-                  </div>
+                <div className="space-y-2">
+                  <h3 className="text-2xl font-bold text-slate-900 italic">Ágil & Seguro</h3>
+                  <p className="text-slate-500">Sua contabilidade em boas mãos, com processos 100% digitais e transparentes.</p>
                 </div>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-slate-50 p-4 rounded-xl">
-                    <span className="text-xs text-slate-500 block mb-1">Restituição Estimada</span>
-                    <span className="text-lg font-bold text-slate-800">R$ 2.450,00</span>
-                  </div>
-                  <div className="bg-slate-50 p-4 rounded-xl">
-                    <span className="text-xs text-slate-500 block mb-1">Prazo de Entrega</span>
-                    <span className="text-lg font-bold text-slate-800">12 Dias</span>
-                  </div>
+                <div className="flex gap-2">
+                  {[1, 2, 3, 4, 5].map((i) => (
+                    <div key={i} className="w-2 h-2 bg-primary rounded-full opacity-20"></div>
+                  ))}
                 </div>
               </div>
             </div>
-            {/* Decorative Elements */}
-            <div className="absolute -top-10 -right-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl -z-10"></div>
-            <div className="absolute -bottom-10 -left-10 w-60 h-60 bg-blue-500/5 rounded-full blur-3xl -z-10"></div>
           </div>
         </div>
       </div>
