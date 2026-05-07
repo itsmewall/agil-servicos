@@ -39,13 +39,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden min-h-screen flex flex-col`}
       >
         <SchemaOrg />
         <Navbar />
-        <main>{children}</main>
+        <main className="flex-grow">{children}</main>
         <Footer />
         <WhatsAppButton />
         <CookieBanner />

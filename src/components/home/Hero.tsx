@@ -20,7 +20,7 @@ export function Hero() {
               <span>Soluções Ágeis para sua Burocracia</span>
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight">
               Sua vida sem <span className="text-primary">complicações</span> burocráticas.
             </h1>
             
